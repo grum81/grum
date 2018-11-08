@@ -1,0 +1,4 @@
+uk\co\grahamslaven\grum\GrumController.class
+uk\co\grahamslaven\grum\GrumApplication.class
+uk\co\grahamslaven\grum\mapper\ContactMapper.class
+uk\co\grahamslaven\grum\domain\Contact.class
