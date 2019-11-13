@@ -13,7 +13,7 @@
     <nav class="navbar" style="background-color: whitesmoke;">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" th:href="@{/}">
                     <span class="icon is-large">
                         <i class="fas fa-phone-square fa-2x"></i>
                     </span>
@@ -29,7 +29,7 @@
         <h1 class="title">Contact List</h1>
 
         <p class="has-text-right-tablet">
-            <a href="/create" class="button is-primary">
+            <a th:href="@{/create}" class="button is-primary">
                 <span class="icon is-small">
                     <i class="fas fa-plus"></i>
                 </span>
@@ -51,8 +51,7 @@
 	                <td th:text="|${contact.lastName} ${contact.firstName}|"></td>
 	                <td th:text="${contact.company}"></td>
 	                <td><a th:href="'mailto:' + ${contact.emailAddress}" th:text="${contact.emailAddress}"></a></td>
-	                <td><a th:href="'/' + ${contact.id}" class="button is-link is-small is-outlined">More</a>
-	            </tr>
+	                <td><a th:href="@{/{id}(id=${contact.id})}" class="button is-link is-small is-outlined">More</a>	            </tr>
             </tbody>
         </table>
 

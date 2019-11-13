@@ -13,7 +13,7 @@
     <nav class="navbar" style="background-color: whitesmoke;">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" th:href="@{/}">
                     <span class="icon is-large">
                         <i class="fas fa-phone-square fa-2x"></i>
                     </span>
@@ -70,7 +70,7 @@
                         </tr>
                         <tr>
                             <th>Mobile No.</th>
-                            <td><input type="text" th:field="*{MobileNo}" class="input" /></td>
+                            <td><input type="text" th:field="*{mobileNo}" class="input" /></td>
                         </tr>
                         <tr>
                             <td colspan="2" align="center">
@@ -81,7 +81,7 @@
                 </table>
             </form>
 
-            <a href="/${fn:escapeXml(contact.id)}" class="button">Back</a>
+            <a th:href="@{/{id}(id=${contact.id})}" class="button">Back</a>
 
         </div>
     </section>

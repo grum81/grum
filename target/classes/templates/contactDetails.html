@@ -13,7 +13,7 @@
     <nav class="navbar" style="background-color: whitesmoke;">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
+                <a class="navbar-item" th:href="@{/}">
                     <span class="icon is-large">
                         <i class="fas fa-phone-square fa-2x"></i>
                     </span>
@@ -29,13 +29,13 @@
         <h1 class="title">Contact Details</h1>
 
         <p class="has-text-right-tablet">
-            <a th:href="'/update/' + ${contact.id}" class="button is-primary">
+            <a th:href="@{/update/{id}(id=${contact.id})}" class="button is-primary">
                 <span class="icon is-small">
                     <i class="fas fa-plus"></i>
                 </span>
                 <span>Update</span>
             </a>
-            <a th:href="'/delete/' + ${contact.id}" class="button is-primary">
+            <a th:href="@{/delete/{id}(id=${contact.id})}" class="button is-primary">
                 <span class="icon is-small">
                     <i class="fas fa-plus"></i>
                 </span>
@@ -84,7 +84,7 @@
             </tbody>
         </table>
 
-        <a href="/" class="button">Back</a>
+        <a th:href="@{/}" class="button">Back</a>
 
       </div>
     </section>

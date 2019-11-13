@@ -8,12 +8,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication
 public class GrumApplication extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GrumApplication.class, args);
-	}	
-
 	@Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(GrumApplication.class);
     }
+
+	public static void main(String[] args) {
+		SpringApplication.run(GrumApplication.class, args);
+	}
 }

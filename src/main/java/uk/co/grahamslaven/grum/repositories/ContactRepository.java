@@ -11,9 +11,9 @@ import org.apache.ibatis.annotations.Update;
 
 import uk.co.grahamslaven.grum.models.Contact;
 
-import org.apache.ibatis.annotations.Delete;;
+import org.apache.ibatis.annotations.Delete;
 
-@Mapper
+ @Mapper
 public interface ContactRepository {
 
 	@Results({

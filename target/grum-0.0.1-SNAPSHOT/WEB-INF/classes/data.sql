@@ -8,7 +8,7 @@ INSERT INTO contacts (
     email_address,
     external_telephone_no,
     internal_telephone_no,
-    mobile_no 
+    mobile_no
 ) VALUES (
     'Joe',
     'Bloggs',
@@ -32,7 +32,7 @@ INSERT INTO contacts (
     email_address,
     external_telephone_no,
     internal_telephone_no,
-    mobile_no 
+    mobile_no
 ) VALUES (
     'John',
     'Doe',
